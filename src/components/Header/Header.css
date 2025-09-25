@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 6rem;
+}
+
+.header__item {
+  list-style: none;
+}
+
+.header__item--logo {
+  text-decoration: none;
+  cursor: pointer;
+}
