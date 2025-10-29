@@ -1,0 +1,21 @@
+.container-img {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.container-img img {
+  width: 100%;
+}
+
+.container-img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
