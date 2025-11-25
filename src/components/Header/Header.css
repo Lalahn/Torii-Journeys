@@ -1,18 +1,24 @@
-.header {
+header {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  min-height: 3rem;
   align-items: center;
-  padding: 1rem;
-  gap: 6rem;
+}
+
+.header__navigation {
+  display: none;
 }
 
 .header__item {
   list-style: none;
-}
-
-.header__item--logo {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .logo {
@@ -25,4 +31,91 @@
 
 .logo img {
   width: 100%;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  z-index: 999;
+  top: 49px;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list--show {
+  display: none;
+}
+
+.menu-li {
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border-bottom: 0.5px solid #000;
+}
+
+.menu-sub {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 0.5px solid #000;
+  justify-content: center;
+}
+
+.menu-sub--show {
+  display: none;
+}
+
+.sub-li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.sub-li:hover {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: block;
+    padding: 0;
+  }
+
+  .nav {
+    justify-content: space-around;
+    padding: 0;
+    gap: 6rem;
+  }
+
+  .header__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 6rem;
+  }
+
+  .header__item--logo {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
 }
