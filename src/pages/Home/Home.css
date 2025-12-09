@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+.title-section {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.title-section .line-left {
+  flex-grow: 1;
+}
+
+.title-section .line-right {
+  flex-grow: 1;
+}
